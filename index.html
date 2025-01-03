@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>Editable Resume Builder</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <div class="container">
+            <header>
+                  <h1>Resume Builder</h1>
+            </header>
+
+            <section class="input-section">
+                  <h2>Edit Your Details</h2>
+                  <form id="resumeForm">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+                        <label for="about">About Me:</label>
+                        <textarea id="about" placeholder="Write a short bio..." required></textarea>
+
+                        <label for="skills">Skills (comma-separated):</label>
+                        <input type="text" id="skills" placeholder="e.g., JavaScript, CSS, HTML" required>
+
+                        <label for="experience">Work Experience:</label>
+                        <textarea id="experience" placeholder="List your work experience..." required></textarea>
+
+                        <label for="education">Education:</label>
+                        <textarea id="education" placeholder="List your educational qualifications..."
+                              required></textarea>
+
+                        <button type="submit">Generate Resume</button>
+                  </form>
+            </section>
+
+            <section class="output-section">
+                  <h2>Your Resume</h2>
+                  <div id="resumeOutput">
+                        <!-- Generated resume will appear here -->
+                  </div>
+            </section>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
